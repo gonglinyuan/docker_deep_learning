@@ -4,7 +4,7 @@ MAINTAINER gonglinyuan
 ENTRYPOINT ["/bin/bash", "-c"]
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-ENV PATH /opt/conda/bin:/opt/conda/envs/deep_learning/bin:$PATH
+ENV PATH /opt/conda/envs/deep_learning/bin:/opt/conda/bin:$PATH
 
 ADD https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh /tmp/
 RUN /bin/bash /tmp/Miniconda3-latest-Linux-x86_64.sh -b -p /opt/conda
